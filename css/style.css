@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+:root {
+    --header-bg-color: #528ae4;
+  }
+:root {
+    --container-bg-color: #e0e0e0;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--header-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+header nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width:4.4rem;
+    padding: 0 1.7rem;
+}
+nav ul{
+    height:58px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 25px;
+    width: 460px;
+    border-radius: 5px;
+    margin: 0 60px;
+    padding: 0 10px;
+}
+.search button{
+    position: absolute;
+    left: 913px;
+    height: 25px;
+    border:none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.container{
+    height: auto;
+    background-color: var(--container-bg-color);
+}
+.slider{
+    margin: auto;
+    width:80vw;
+    height:80vh;
+    background-image: url('https://images.everydayhealth.com/images/best-and-worst-shoes-for-back-pain-1440x810.jpg?sfvrsn=f06ddf5a_1');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px 5px;
+    animation: slide 18s linear infinite ;
+}
+@keyframes slide{
+    0%{
+        background-image: url('https://images.everydayhealth.com/images/best-and-worst-shoes-for-back-pain-1440x810.jpg?sfvrsn=f06ddf5a_1');
+        opacity:0.1;
+    }
+    15%{
+        background-image: url('https://images.everydayhealth.com/images/best-and-worst-shoes-for-back-pain-1440x810.jpg?sfvrsn=f06ddf5a_1');
+        opacity:1;
+    }
+    24%{
+        background-image: url('https://images.everydayhealth.com/images/best-and-worst-shoes-for-back-pain-1440x810.jpg?sfvrsn=f06ddf5a_1');
+        opacity:0.1;
+    }
+    25%{
+        background-image: url('https://cdn.dribbble.com/users/5739021/screenshots/16801648/hp-pavilion-gaming-laptop-advertisement-poster-design-2.jpg');
+        opacity:0.1;
+    }
+    40%{
+        background-image: url('https://cdn.dribbble.com/users/5739021/screenshots/16801648/hp-pavilion-gaming-laptop-advertisement-poster-design-2.jpg');
+        opacity:1;
+    }
+    49%{
+        background-image: url('https://cdn.dribbble.com/users/5739021/screenshots/16801648/hp-pavilion-gaming-laptop-advertisement-poster-design-2.jpg');
+        opacity:0.1;
+    }
+    50%{
+        background-image: url('https://cdn3.vectorstock.com/i/1000x1000/79/92/body-oil-and-spray-natural-products-vector-17817992.jpg');
+        opacity:0.1;
+    }
+    65%{
+        background-image: url('https://cdn3.vectorstock.com/i/1000x1000/79/92/body-oil-and-spray-natural-products-vector-17817992.jpg');
+        opacity:1;
+    }
+    74%{
+        background-image: url('https://cdn3.vectorstock.com/i/1000x1000/79/92/body-oil-and-spray-natural-products-vector-17817992.jpg');
+        opacity:0.1;
+    }
+    75%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0044/1208/0217/files/Mbeds_1400x.progressive.png.jpg?v=1643978876');
+        opacity:0.1;
+    }
+    90%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0044/1208/0217/files/Mbeds_1400x.progressive.png.jpg?v=1643978876');
+        opacity:1;
+    }
+    100%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0044/1208/0217/files/Mbeds_1400x.progressive.png.jpg?v=1643978876');
+        opacity:0.1;
+    }
+}
+h2{
+    margin: 1.2rem;
+}
+.container .box {
+    height: 42vh;
+   display: flex;
+   flex-direction: row;
+   overflow: hidden;
+}
+.item{
+    margin: 0 10px;
+}
+.item img{
+    height: 30vh;
+    width:18vw;
+    border-radius: 5px;
+}
+.item img:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+.container .box .item .img{
+    height: 30vh;
+    width: 20vw;
+}
+footer{
+    height: 20vh;
+    color:#e0e0e0;
+    background-color: var(--header-bg-color);
+}
+.contact ul{
+    list-style: none;
+}
+.contact ul li{
+    display: inline;
+    margin: 0 8px;
+}
+.contact ul li a{
+    text-decoration: none;
+}
+.contact ul li a img:hover{
+    height:5.6vh;
+}
+.contact ul li a img{
+    height: 5vh;
+    width:auto;
+    
+}
